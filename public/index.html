@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Budget I</title>
+</head>
+<body>
+    <h1>My budget categorized in envelopes</h1>
+
+<!-- Fetch all envelopes -->
+    <div style="margin-bottom: 4rem">
+      <h3 style="text-decoration: underline;">Fetch all envelopes -- GET</h3>
+      <div>
+        <button id="fetch-envelopes">GET all envelopes</button>
+      </div>
+      <div id="get-envelopes-container"></div>
+    </div>
+    
+
+<!-- Add new envelope -->
+    <div style="margin-bottom: 4rem">
+      <h3 style="text-decoration: underline;">Add new envelope -- POST</h3>
+      <form>
+        <label for="type">Envelope name:</label><br>
+          <input type="text" id="type" name="type" value=""><br>
+        <label for="budget">Budget amount:</label><br>
+          <input type="number" id="budget" name="budget" value="">
+      </form>
+      <div style="margin-top: 10px">
+        <button id="post-envelope">Submit</button>
+      </div>
+      <div id="post-envelope-container"></div>
+    </div>
+
+
+<!-- Get particular envelope -->
+    <div style="margin-bottom: 4rem">
+      <h3 style="text-decoration: underline;">Show the envelope -- GET id</h3>
+      <form>
+        <label for="id">Envelope id:</label><br>
+          <input type="number" id="id" name="id" value=""><br>
+      </form>
+      <div style="margin-top: 10px">
+        <button id="get-id-envelope">Get</button>
+      </div>
+      <div id="get-id-envelope-container"></div>
+    </div>
+ 
+
+<!-- Update envelope -->
+    <div style="margin-bottom: 4rem">
+      <h3 style="text-decoration: underline;">Amend the envelope -- PUT id</h3>
+      <form>
+        <label for="idUpdate">Envelope id:</label><br>
+          <input type="number" id="idUpdate" name="idUpdate" value=""><br>
+        <label for="typeUpdate">New envelope name:</label><br>
+          <input type="text" id="typeUpdate" name="typeUpdate" value=""><br>
+        <label for="budgetUpdate">Add or deduct amount:</label><br>
+          <input type="number" id="budgetUpdate" name="budgetUpdate" value=""><br>
+      </form>
+      <div style="margin-top: 10px">
+        <button id="update-envelope">Update</button>
+      </div>
+      <div id="update-envelope-container"></div>
+    </div>
+
+
+<!-- Delete envelope -->
+    <div style="margin-bottom: 4rem">
+      <h3 style="text-decoration: underline;">Delete the envelope -- DELETE id</h3>
+      <form>
+        <label for="idDelete">Envelope id:</label><br>
+          <input type="number" id="idDelete" name="idDelete" value=""><br>
+      </form>
+      <div style="margin-top: 10px">
+        <button id="delete-envelope">Delete</button>
+      </div>
+      <div id="delete-envelope-container"></div>
+    </div>
+
+
+<!-- Swap envelopess -->
+    <div style="margin-bottom: 4rem">
+      <h3 style="text-decoration: underline;">Swap money between two envelopes -- POST</h3>
+      <form>
+        <label for="idFirst">From Envelope id:</label><br>
+          <input type="number" id="idFirst" name="idFirst" value=""><br>
+        <label for="idSecond">To Envelope id:</label><br>
+          <input type="number" id="idSecond" name="idSecond" value=""><br>
+      </form>
+      <div style="margin-top: 10px">
+        <button id="swap-envelope">Swap</button>
+      </div>
+      <div id="swap-envelope-container"></div>
+    </div>
+
+
+<!-- Add additional money -->
+    <div style="margin-bottom: 4rem">
+      <h3 style="text-decoration: underline;">Distribute additional money -- POST</h3>
+      <form>
+        <label for="amount">Amount to distribute</label><br>
+          <input type="number" id="amount" name="amount" value=""><br>
+      </form>
+      <div style="margin-top: 10px">
+        <button id="distribute-envelope">Distribute</button>
+      </div>
+      <div id="distribute-envelope-container"></div>
+    </div>
+    
+
+<script src="index.js"></script>
+    
+</body>
+</html>

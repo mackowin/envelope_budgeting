@@ -1,0 +1,26 @@
+{
+  "name": "budget1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js -e ejs,js,css,html,jpg,png,scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mackowin/personalbudget.git"
+  },
+  "keywords": [
+    "personal project express"
+  ],
+  "author": "Natalia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mackowin/personalbudget/issues"
+  },
+  "homepage": "https://github.com/mackowin/personalbudget#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19"
+  }
+}
